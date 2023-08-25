@@ -40,7 +40,7 @@
 
 
 ```
-git clone https://github.com/asnhtaa/ITFBGroup_TestAssignment.git
+git clone https://github.com/asnhtaa/Sovcombank_TA2.git
 ```
 
 4) Откройте командную строку, перейдите в директорию проекта и выполните следующую команду для сборки проекта и запуска тестов:
