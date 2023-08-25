@@ -1,0 +1,57 @@
+[
+  {
+    "description": "Shorten valid URL",
+    "url": "http://example.com/",
+    "expectedResult": "cleanuri.com",
+    "testType": "positive"
+  },
+  {
+    "description": "Shorten URL with query parameters",
+    "url": "http://example.com/?query=test",
+    "expectedResult": "cleanuri.com",
+    "testType": "positive"
+  },
+  {
+    "description": "Shorten Url with encoded characters",
+    "url": "http://example.com/%23section",
+    "expectedResult": "cleanuri.com",
+    "testType": "positive"
+  },
+  {
+    "description": "Shorten invalid URL",
+    "url": "invalid_url",
+    "expectedResult": "",
+    "testType": "negative"
+  },
+  {
+    "description": "Shorten URL with forbidden characters",
+    "url": "https://examp&le.com/#se?ction",
+    "expectedResult": "",
+    "testType": "negative"
+  },
+  {
+    "description": "Shorten URL with spaces",
+    "url": "https:/     /www.example.com/t  est page",
+    "expectedResult": "",
+    "testType": "negative"
+  },
+  {
+    "description": "Shorten Empty URL",
+    "url": "",
+    "expectedResult": "",
+    "testType": "negative"
+  },
+  {
+    "description": "Shorten Incomplete URL",
+    "url": "https://www.",
+    "expectedResult": "",
+    "testType": "negative"
+  },
+
+  {
+    "description": "Valid URL for specific test types",
+    "url": "http://example.com/",
+    "expectedResult": "cleanuri.com",
+    "testType": "specific"
+  }
+]
